@@ -1,0 +1,222 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+#all-players-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin: auto;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+* {
+  padding: 0;
+  margin: 3px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/003/709/101/non_2x/superbowl-american-football-stadium-background-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h2,
+h3 {
+  object-position: center top;
+  background-color: black;
+  border: 10px solid #b3995d;
+  border-top: 0;
+  color: white;
+
+  font-size: 2rem;
+  width: 83%;
+  height: 13%;
+  text-align: center;
+}
+
+select,
+select option {
+  color: black;
+}
+
+button {
+  padding: 5px;
+  background-color: #b3995d;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  color: black;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#all-players-containers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin: auto;
+}
+
+#player_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 20px solid #aa0000;
+  background-color: #b3995d;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  box-shadow: 10px 5px 5px black;
+  margin: 20px;
+  color: black;
+}
+
+div input {
+  color: black;
+}
+
+#player_form :nth-last-child(1) {
+  margin: 10px;
+}
+
+#team {
+  color: black;
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid #b3995d;
+  background-color: #aa0000;
+  width: 400px;
+  height: 600px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.add-player-button {
+  background-color: #aa0000;
+}
+
+.player-card img {
+  width: 80%;
+  position: relative;
+  border: 5px solid #b3995d;
+}
+
+.player-card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83%;
+  /* height: 20%; */
+}
+
+.player-card div div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 83%;
+}
+
+.detail-card {
+  height: 800px;
+  width: 600px;
+}
+
+.detail-card img {
+  height: 75%;
+  width: auto;
+}
+
+.detail-card div {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.detail-card h3 {
+  height: 8%;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid #aa0000;
+  background-color: #b3995d;
+  color: black;
+  text-align: center;
+  width: 20%;
+}
+
+#search-results {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  columns: 5;
+  width: 80%;
+}
+
+#table-title td {
+  color: white;
+}
